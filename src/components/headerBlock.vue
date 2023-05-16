@@ -7,9 +7,9 @@
                     <img src="/images/header-logo.png" alt="header-logo" class="header-logo">
                 </a>
                 <nav>
-                    <a href="#" class="nav-item">ОТЗЫВЫ</a>
-                    <a href="#" class="nav-item">ЧТО ЭТО?</a>
-                    <a href="#" class="nav-item">КОНТАКТЫ</a>
+                    <a href="#" class="nav-item">отзывы</a>
+                    <a href="#" class="nav-item">что это?</a>
+                    <a href="#" class="nav-item">контакты</a>
                 </nav>
             </div>
         </div>
@@ -42,6 +42,7 @@ export default {
             .nav-item {
                 @include defaultGreyText;
                 margin-left: 25px;
+                font-size: 18px;
 
                 &:first-child {
                     margin-left: 0;

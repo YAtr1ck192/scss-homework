@@ -53,6 +53,7 @@ export default {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+
                 .social-block {
                     display: flex;
                     align-items: center;
@@ -75,6 +76,8 @@ export default {
                     .social-link {
                         @include defaultWhiteLink;
                         margin-left: 12px;
+                        font-size: 14px;
+
                     }
                 }
             }
