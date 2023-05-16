@@ -22,12 +22,13 @@ export default {
         width: 344px;
         height: 414px;
         border-radius: 9px;
-        box-shadow: 0 1px 15px #fdb0d9;
+        box-shadow: 0 1px 15px #fab8db;
         overflow: hidden;
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
         flex-direction: column;
+        background: white;
 
         .card-img {
             max-width: 363px;

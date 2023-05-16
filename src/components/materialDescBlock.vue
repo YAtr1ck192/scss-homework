@@ -11,6 +11,11 @@
                     :card="card"
                 />
             </div>
+            <img
+                src="/images/desc-block-decor.png"
+                alt="desc-block-decor"
+                class="desc-block-decor"
+            >
         </div>
     </div>
 </template>
@@ -93,6 +98,16 @@ export default {
             align-items: center;
             justify-content: space-between;
             width: $maxWidth - 30;
+            z-index: 4;
+        }
+        .desc-block-decor {
+            position: absolute;
+            left: 0;
+            z-index: -1;
+            margin-top: 330px;
+            margin-left: -80px;
+            width: 757px;
+            height: 581px;
         }
     }
 </style>
