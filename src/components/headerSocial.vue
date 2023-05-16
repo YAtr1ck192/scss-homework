@@ -73,7 +73,7 @@ export default {
                         height: 30px;
                     }
                     .social-link {
-                        @include defaultWhiteText;
+                        @include defaultWhiteLink;
                         margin-left: 12px;
                     }
                 }
