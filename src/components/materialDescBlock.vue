@@ -88,7 +88,7 @@ export default {
             margin-bottom: 120px;
 
             .gradient-text {
-                background-image: linear-gradient(180deg, #B90160 0%, #3D5BF5 100%);
+                background-image: $linearGradient;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
@@ -105,7 +105,7 @@ export default {
             left: 0;
             z-index: -1;
             margin-top: 330px;
-            margin-left: -80px;
+            margin-left: -150px;
             width: 757px;
             height: 581px;
         }

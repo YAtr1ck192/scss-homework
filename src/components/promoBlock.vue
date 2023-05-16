@@ -61,6 +61,7 @@ export default {
             }
             button {
                 @include linearGradientButton;
+                cursor: pointer;
             }
         }
         .promo-main-img {

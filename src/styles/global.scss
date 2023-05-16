@@ -1,4 +1,7 @@
 $maxWidth: 1220px;
+$linearGradient: linear-gradient(95.2deg, #B90160 2.23%, #2E3192 100%);
+
+
 @font-face {
     font-family: 'Roboto';
     src: url("@/assets/fonts/Roboto-Regular.ttf");
@@ -30,12 +33,11 @@ $maxWidth: 1220px;
     line-height: 23px;
     text-align: center;
     color: white;
-    background: linear-gradient(95.2deg, #B90160 2.23%, #2E3192 99.51%);
+    background: $linearGradient;
     border: none;
     border-radius: 7px;
     padding: 15px 40px;
 }
-
 * {
     margin: 0;
     padding: 0;

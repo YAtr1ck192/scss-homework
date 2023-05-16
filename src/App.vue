@@ -3,6 +3,7 @@
       <headerBlock />
       <promoBlock />
       <materialDescBlock />
+      <sliderBlock />
   </div>
 </template>
 
@@ -10,12 +11,14 @@
 import headerBlock from "@/components/headerBlock.vue";
 import promoBlock from "@/components/promoBlock.vue";
 import materialDescBlock from "@/components/materialDescBlock.vue";
+import sliderBlock from "@/components/sliderBlock.vue";
 export default {
   name: 'App',
   components: {
       headerBlock,
       promoBlock,
-      materialDescBlock
+      materialDescBlock,
+      sliderBlock
   }
 }
 </script>
