@@ -38,6 +38,13 @@ $linearGradient: linear-gradient(95.2deg, #B90160 2.23%, #2E3192 100%);
     border-radius: 7px;
     padding: 15px 40px;
 }
+@mixin slide-desc {
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+    text-align: center;
+}
 * {
     margin: 0;
     padding: 0;
