@@ -93,12 +93,33 @@ export default {
     @media screen and (max-width: $phoneWidth) {
         .header-social-content {
             flex-direction: column;
+            max-width: 260px;
 
-            .social-block img {
-                display: none;
+            .social-block{
+                flex-direction: column;
+
+                &:first-child {
+                    opacity: 1;
+                }
+                & img {
+                    display: none;
+                }
+                &:last-child {
+                    display: none;
+                }
             }
-            .social-block:last-child {
-                opacity: 0;
+            .social-block:first-child {
+                margin-bottom: 10px;
+
+                & .social-link:last-child {
+                    margin-top: 2px;
+                }
+            }
+            .social-block:nth-child(2) {
+                & .social-link {
+                    font-weight: 300;
+                    font-size: 17px;
+                }
             }
         }
     }

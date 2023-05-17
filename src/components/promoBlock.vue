@@ -87,20 +87,11 @@ export default {
     }
     @media screen and (max-width: $tabletWidth) {
         .promo-content {
-            width: 100%;
             height: 473px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
 
             .left-part {
                 .promo-title {
                     max-width: 315px;
-                    font-family: 'Roboto';
-                    font-size: 50px;
-                    font-weight: 900;
-                    line-height: 59px;
-                    text-align: left;
                 }
                 button {
                     padding: 13px 30px;
@@ -108,15 +99,10 @@ export default {
                 }
             }
             .promo-main-img {
-                position: absolute;
-                right: 0;
-                margin-top: -100px;
-                margin-right: -40px;
                 width: 380px;
                 height: 473px;
             }
             .promo-block-bottom-decor {
-                position: absolute;
                 left: 20px;
                 bottom: -70px;
                 width: 100px;
@@ -124,11 +110,51 @@ export default {
                 transform: rotate(310deg);
             }
             .promo-block-top-decor {
-                position: absolute;
                 top: -35px;
                 left: 185px;
-                width: 64px;
-                height: 50px;
+            }
+        }
+    }
+    @media screen and (max-width: $phoneWidth) {
+        .promo-content {
+            height: 256px;
+
+            .left-part {
+                margin: 0 auto;
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                flex-direction: column;
+
+                .promo-title {
+                    max-width: 200px;
+                    text-align: center;
+                    font-size: 25px;
+                    line-height: 25px;
+                }
+                .promo-desc {
+                    font-size: 20px;
+                    font-weight: 300;
+                    line-height: 23px;
+                    text-align: center;
+                    margin: 10px auto;
+                }
+                button {
+                    padding: 9px 20px;
+                    font-size: 10px;
+                    line-height: 12px;
+                    width: 93px;
+                    margin: 0 auto;
+                }
+            }
+            .promo-main-img {
+                display: none;
+            }
+            .promo-block-bottom-decor {
+                display: none;
+            }
+            .promo-block-top-decor {
+                display: none;
             }
         }
     }

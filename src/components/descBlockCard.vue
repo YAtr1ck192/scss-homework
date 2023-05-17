@@ -53,7 +53,7 @@ export default {
     }
     @media screen and (max-width: $tabletWidth) {
         .desc-block-card {
-            width: 594px;
+            width: $maxWidthTablet;
             height: 325px;
             border-radius: 9px;
             box-shadow: 0 1px 15px #fab8db;
@@ -66,7 +66,7 @@ export default {
             margin-bottom: 60px;
 
             .card-img {
-                width: 594px;
+                width: $maxWidthTablet;
                 height: 160px;
                 background-size: cover;
             }

@@ -1,4 +1,6 @@
 $maxWidth: 1220px;
+$maxWidthTablet: 595px;
+$maxWidthPhone: 265px;
 $linearGradient: linear-gradient(95.2deg, #B90160 2.23%, #2E3192 100%);
 $tabletWidth: 1320px;
 $phoneWidth: 770px;
@@ -69,5 +71,7 @@ $phoneWidth: 770px;
     }
 }
 @media screen and (max-width: $phoneWidth){
-
+    .container {
+        max-width: 330px;
+    }
 }
