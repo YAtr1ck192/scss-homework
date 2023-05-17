@@ -1,6 +1,7 @@
 $maxWidth: 1220px;
 $linearGradient: linear-gradient(95.2deg, #B90160 2.23%, #2E3192 100%);
-
+$tabletWidth: 1320px;
+$phoneWidth: 770px;
 
 @font-face {
     font-family: 'Roboto';
@@ -62,4 +63,11 @@ $linearGradient: linear-gradient(95.2deg, #B90160 2.23%, #2E3192 100%);
     padding: 0 15px;
     position: relative;
 }
+@media screen and (max-width: $tabletWidth){
+    .container {
+        max-width: 645px;
+    }
+}
+@media screen and (max-width: $phoneWidth){
 
+}

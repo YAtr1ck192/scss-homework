@@ -9,11 +9,13 @@
            <div class="footer-content">
                 <div class="footer-items">
                     <div class="footer-items-title">МЫ В СОЦИАЛЬНЫХ СЕТЯХ</div>
-                    <img
-                        src="/images/footer-social-icon.png"
-                        alt="footer-social-icon"
-                        class="footer-social-icon"
-                    >
+                    <a href="#">
+                        <img
+                            src="/images/footer-social-icon.png"
+                            alt="footer-social-icon"
+                            class="footer-social-icon"
+                        >
+                    </a>
                 </div>
                 <div class="footer-items">
                    <div class="footer-items-title">КОНТАКТНЫЕ ТЕЛЕФОНЫ</div>
@@ -44,7 +46,6 @@ export default {
 
 <style scoped lang="scss">
     @import "/src/styles/global";
-
     footer {
         background: white;
         padding: 20px 0 70px;
@@ -98,6 +99,32 @@ export default {
                     .town {
                         margin-top: 15px;
                     }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: $tabletWidth) {
+        footer {
+            .container {
+                max-width: 740px;
+
+                .left-decor {
+                    left: 85px;
+                    top: 120px;
+                    width: 85px;
+                    height: 97px;
+                }
+                .right-decor {
+                    right: 0;
+                    top: 120px;
+                    width: 40px;
+                    height: 45px;
+                }
+                .footer-content {
+                    padding: 150px 0 20px 0;
+                    display: flex;
+                    justify-content: space-between;
+
                 }
             }
         }

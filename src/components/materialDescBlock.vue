@@ -12,9 +12,14 @@
                 />
             </div>
             <img
+                src="/images/desc-block-right-decor.png"
+                alt="desc-block-decor"
+                class="desc-block-decor right-decor"
+            >
+            <img
                 src="/images/desc-block-decor.png"
                 alt="desc-block-decor"
-                class="desc-block-decor"
+                class="desc-block-decor left-decor"
             >
         </div>
     </div>
@@ -102,12 +107,67 @@ export default {
         }
         .desc-block-decor {
             position: absolute;
-            left: 0;
             z-index: -1;
-            margin-top: 330px;
-            margin-left: -150px;
             width: 757px;
             height: 581px;
+        }
+        .left-decor {
+            margin-top: 330px;
+            margin-left: -150px;
+            left: 0;
+        }
+        .right-decor {
+            display: none;
+        }
+    }
+    @media screen and (max-width: $tabletWidth){
+        .desc-block-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 100px 0 65px;
+
+            .desc-block-title {
+                font-family: 'Roboto';
+                font-size: 40px;
+                font-weight: 400;
+                line-height: 47px;
+                letter-spacing: 0em;
+                text-align: center;
+                margin-bottom: 50px;
+
+                .gradient-text {
+                    background-image: $linearGradient;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+            .desc-block-cards {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 600px;
+                flex-wrap: wrap;
+                z-index: 4;
+            }
+            .desc-block-decor {
+                position: absolute;
+                z-index: -1;
+                width: 232px;
+                height: 200px;
+            }
+            .left-decor {
+                left: 35px;
+                margin-top: -420px;
+            }
+            .right-decor {
+                display: block;
+                right: 0;
+                margin-right: -80px;
+                bottom: -30px;
+
+            }
         }
     }
 </style>

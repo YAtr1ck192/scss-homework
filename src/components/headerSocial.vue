@@ -3,7 +3,7 @@
         <div class="container">
             <div class="header-social-content">
                 <div class="social-block">
-                    <img 
+                    <img
                         src="../../public/images/header-phone-icon.png"
                         alt="header-phone-icon"
                         class="phone-icon"
@@ -45,11 +45,10 @@ export default {
     @import "src/styles/global";
     .header-social {
         background: linear-gradient(269.91deg, rgba(46, 49, 146, 0.7) 0%, rgba(212, 20, 90, 0.7) 98.16%);
-        max-height: 77px;
         min-width: 100%;
 
             .header-social-content {
-                padding: 20px 0;
+                padding: 24.5px 0;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -81,6 +80,26 @@ export default {
                     }
                 }
             }
+    }
+    @media screen and (max-width: $tabletWidth) {
+        .header-social-content {
 
+            .social-block:first-child {
+                opacity: 0;
+                pointer-events: none;
+            }
+        }
+    }
+    @media screen and (max-width: $phoneWidth) {
+        .header-social-content {
+            flex-direction: column;
+
+            .social-block img {
+                display: none;
+            }
+            .social-block:last-child {
+                opacity: 0;
+            }
+        }
     }
 </style>

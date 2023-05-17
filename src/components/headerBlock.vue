@@ -50,4 +50,22 @@ export default {
             }
         }
     }
+    @media screen and (max-width: $tabletWidth) {
+        .header-content {
+            margin-top: 50px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            a .header-logo {
+                width: 270px;
+                height: 60px;
+            }
+            nav {
+                .nav-item {
+                    display: none;
+                }
+            }
+        }
+    }
 </style>

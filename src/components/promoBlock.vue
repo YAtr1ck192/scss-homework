@@ -85,4 +85,51 @@ export default {
             height: 50px;
         }
     }
+    @media screen and (max-width: $tabletWidth) {
+        .promo-content {
+            width: 100%;
+            height: 473px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .left-part {
+                .promo-title {
+                    max-width: 315px;
+                    font-family: 'Roboto';
+                    font-size: 50px;
+                    font-weight: 900;
+                    line-height: 59px;
+                    text-align: left;
+                }
+                button {
+                    padding: 13px 30px;
+                    font-size: 15px;
+                }
+            }
+            .promo-main-img {
+                position: absolute;
+                right: 0;
+                margin-top: -100px;
+                margin-right: -40px;
+                width: 380px;
+                height: 473px;
+            }
+            .promo-block-bottom-decor {
+                position: absolute;
+                left: 20px;
+                bottom: -70px;
+                width: 100px;
+                height: 130px;
+                transform: rotate(310deg);
+            }
+            .promo-block-top-decor {
+                position: absolute;
+                top: -35px;
+                left: 185px;
+                width: 64px;
+                height: 50px;
+            }
+        }
+    }
 </style>
