@@ -1,9 +1,7 @@
 <template>
     <div class="slider">
         <div class="slider-track">
-            <div class="slider-overflow">
-                <sliderWrapper/>
-            </div>
+            <sliderWrapper/>
         </div>
     </div>
 </template>
@@ -32,15 +30,12 @@ export default {
         padding: 55px 0;
         overflow: hidden;
 
-        .slider-overflow {
 
-
-            .slider-track {
-                max-width: 1748px;
-                max-height: 247px;
-                margin: 0 auto;
-                overflow: visible;
-            }
+        .slider-track {
+            max-width: 1748px;
+            max-height: 247px;
+            margin: 0 auto;
+            overflow: visible;
         }
 
     }

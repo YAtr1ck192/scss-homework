@@ -1,13 +1,15 @@
 <template>
-    <div class="slider-wrapper">
-        <swiper class="swiper" :options="swiperOption">
-            <swiper-slide
-                v-for="(slide, index) in slides"
-                :key="index"
-            >
-                <slideCard :value="slide" :slide="slide"/>
-            </swiper-slide>
-        </swiper>
+    <div class="container">
+        <div class="slider-wrapper">
+            <swiper class="swiper" :options="swiperOption">
+                <swiper-slide
+                    v-for="(slide, index) in slides"
+                    :key="index"
+                >
+                    <slideCard :value="slide" :slide="slide"/>
+                </swiper-slide>
+            </swiper>
+        </div>
     </div>
 </template>
 
@@ -77,13 +79,27 @@ export default {
 </script>
 
 <style scoped lang="scss">
- .swiper-slide {
-     opacity: .4;
+    .slider-wrapper {
+        max-width: 1440px;
 
 
-     &.swiper-slide-active {
-         transition: ease-in-out .3s;
-         opacity: 1;
-     }
- }
+        .swiper {
+            width: 1748px;
+            margin-left: -263px;
+
+            .swiper-slide {
+                opacity: .4;
+                max-width: 536px;
+
+                &.swiper-slide-active {
+                    transition: ease-in-out .3s;
+                    opacity: 1;
+                }
+            }
+        }
+
+    }
+
+
+
 </style>
