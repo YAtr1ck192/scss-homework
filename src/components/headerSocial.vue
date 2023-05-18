@@ -88,6 +88,9 @@ export default {
                 opacity: 0;
                 pointer-events: none;
             }
+            .social-link {
+                min-width: 100px;
+            }
         }
     }
     @media screen and (max-width: $phoneWidth) {

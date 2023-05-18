@@ -19,11 +19,17 @@
                 alt="promo-block-top-decor"
                 class="promo-block-top-decor"
             >
-            <img
-                src="/images/promo-img.png"
-                alt="promo-img"
-                class="promo-main-img"
-            >
+            <div class="promo-main-img">
+                <img
+                    src="/images/promo-img.png"
+                    alt="promo-img"
+                >
+                <img
+                    src="/images/promo-main-decor.png"
+                    alt="promo-main-decor"
+                >
+            </div>
+
         </div>
     </div>
 </template>
@@ -64,18 +70,29 @@ export default {
                 cursor: pointer;
             }
         }
-        .promo-main-img {
-                position: absolute;
-                right: 0;
-                margin-top: -100px;
-                margin-right: -40px;
+        .promo-main-img img {
+            position: absolute;
+            right: 0;
+
+            &:first-child {
+                margin-top: -395px;
+                margin-right: 45px;
+                width: 533px;
+                height: 686px;
             }
+            &:last-child {
+                width: 745px;
+                height: 522px;
+                margin-top: -315px;
+
+            }
+        }
         .promo-block-bottom-decor {
-                position: absolute;
-                left: 0;
-                bottom: 50px;
-                width: 115px;
-                height: 130px;
+            position: absolute;
+            left: 0;
+            bottom: 50px;
+            width: 115px;
+            height: 130px;
         }
         .promo-block-top-decor {
             position: absolute;
@@ -87,7 +104,7 @@ export default {
     }
     @media screen and (max-width: $tabletWidth) {
         .promo-content {
-            height: 473px;
+            padding: 40px 0 50px;
 
             .left-part {
                 .promo-title {
@@ -98,9 +115,19 @@ export default {
                     font-size: 15px;
                 }
             }
-            .promo-main-img {
-                width: 380px;
-                height: 473px;
+            .promo-main-img img {
+                right: -100px;
+
+                &:first-child {
+                    width: 368px;
+                    height: 473px;
+                    top: 255px;
+                }
+                &:last-child {
+                    width: 525px;
+                    height: 368px;
+                    top: 220px;
+                }
             }
             .promo-block-bottom-decor {
                 left: 20px;

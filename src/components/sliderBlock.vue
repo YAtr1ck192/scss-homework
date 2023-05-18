@@ -8,7 +8,7 @@
         </div>
         <div
             v-if="screenWidth < 1320"
-            class="slider-on-tablet"
+            class="slider-on-media"
         >
             <slideCard
                 v-for="(slide, index) in slides"
@@ -83,12 +83,25 @@ export default {
     @media screen and (max-width: $tabletWidth){
         .slider {
             padding: 40px 0 20px;
-            .slider-on-tablet {
+            .slider-on-media {
                 margin: 0 auto;
                 max-width: 536px;
 
                 .slide {
                     margin-bottom: 50px;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: $phoneWidth){
+        .slider {
+            padding: 40px 0 20px;
+            .slider-on-media {
+                margin: 0 auto;
+                max-width: 270px;
+
+                .slide {
+                    margin-bottom: 25px;
                 }
             }
         }

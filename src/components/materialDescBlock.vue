@@ -170,4 +170,27 @@ export default {
             }
         }
     }
+    @media screen and (max-width: $phoneWidth){
+          .desc-block-content {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+              padding: 0 0 65px;
+
+              .desc-block-title {
+                  font-family: 'Roboto';
+                  font-size: 20px;
+                  line-height: 24px;
+              }
+              .desc-block-cards {
+                  width: 265px;
+                  flex-wrap: wrap;
+                  z-index: 4;
+              }
+              .desc-block-decor {
+                  display: none;
+              }
+          }
+    }
 </style>

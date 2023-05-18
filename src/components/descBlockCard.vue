@@ -20,7 +20,7 @@ export default {
 
     .desc-block-card {
         width: 344px;
-        height: 414px;
+        min-height: 414px;
         border-radius: 9px;
         box-shadow: 0 1px 15px #fab8db;
         overflow: hidden;
@@ -54,15 +54,7 @@ export default {
     @media screen and (max-width: $tabletWidth) {
         .desc-block-card {
             width: $maxWidthTablet;
-            height: 325px;
-            border-radius: 9px;
-            box-shadow: 0 1px 15px #fab8db;
-            overflow: hidden;
-            display: flex;
-            align-items: flex-start;
-            justify-content: flex-start;
-            flex-direction: column;
-            background: white;
+            min-height: 325px;
             margin-bottom: 60px;
 
             .card-img {
@@ -74,11 +66,8 @@ export default {
                 padding: 10px 33px 22px 22px;
 
                 .card-title {
-                    font-family: 'Roboto';
                     font-size: 36px;
-                    font-weight: 700;
                     line-height: 42px;
-                    text-align: left;
                     margin-bottom: 5px;
                 }
                 .card-desc {
@@ -88,5 +77,32 @@ export default {
                 }
             }
         }
+    }
+    @media screen and (max-width: $phoneWidth) {
+        .desc-block-card {
+            width: $maxWidthPhone;
+            min-height: 360px;
+            margin-bottom: 35px;
+
+            .card-img {
+                width: $maxWidthPhone;
+                height: 180px;
+                background-size: cover;
+            }
+            .card-content {
+                padding: 20px;
+
+                .card-title {
+                    font-size: 30px;
+                    line-height: 35px;
+                }
+                .card-desc {
+                    @include defaultGreyText;
+                    font-size: 14px;
+                    max-width: 220px;
+                    line-height: 16px;
+                }
+            }
+          }
     }
 </style>

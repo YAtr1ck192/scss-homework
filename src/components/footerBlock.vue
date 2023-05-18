@@ -106,7 +106,7 @@ export default {
     @media screen and (max-width: $tabletWidth) {
         footer {
             .container {
-                max-width: 740px;
+                max-width: $tabletWidth;
 
                 .left-decor {
                     left: 85px;
@@ -123,8 +123,36 @@ export default {
                 .footer-content {
                     padding: 150px 0 20px 0;
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: space-evenly;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: $phoneWidth) {
+        footer {
+            padding: 60px 0 50px;
 
+            .container {
+                max-width: $phoneWidth;
+
+                .footer-decor {
+                    display: none;
+                }
+                .footer-content {
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+
+                    .footer-items {
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        margin-bottom: 10px;
+
+                        &:nth-child(2) {
+                            order: -1;
+                        }
+                    }
                 }
             }
         }
