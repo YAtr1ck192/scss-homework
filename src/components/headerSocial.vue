@@ -97,6 +97,7 @@ export default {
         .header-social-content {
             flex-direction: column;
             max-width: 260px;
+            margin: 0 auto;
 
             .social-block{
                 flex-direction: column;

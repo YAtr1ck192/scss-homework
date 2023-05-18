@@ -104,11 +104,15 @@ export default {
     }
     @media screen and (max-width: $tabletWidth) {
         .promo-content {
-            padding: 40px 0 50px;
+            max-height: 407px;
+            padding: 60px 0 120px;
+
 
             .left-part {
                 .promo-title {
                     max-width: 315px;
+                    font-size: 40px;
+                    line-height: 40px;
                 }
                 button {
                     padding: 13px 30px;
@@ -116,22 +120,24 @@ export default {
                 }
             }
             .promo-main-img img {
-                right: -100px;
+                right: -50px;
+                position: absolute;
 
                 &:first-child {
                     width: 368px;
                     height: 473px;
-                    top: 255px;
+                    top: 325px;
+
                 }
                 &:last-child {
                     width: 525px;
                     height: 368px;
-                    top: 220px;
+                    top: 305px;
                 }
             }
             .promo-block-bottom-decor {
                 left: 20px;
-                bottom: -70px;
+                bottom: -35px;
                 width: 100px;
                 height: 130px;
                 transform: rotate(310deg);
@@ -144,7 +150,8 @@ export default {
     }
     @media screen and (max-width: $phoneWidth) {
         .promo-content {
-            height: 256px;
+            height: 240px;
+            padding: 0;
 
             .left-part {
                 margin: 0 auto;
@@ -174,8 +181,19 @@ export default {
                     margin: 0 auto;
                 }
             }
-            .promo-main-img {
-                display: none;
+            .promo-main-img img {
+                position: absolute;
+
+                &:first-child {
+                    display: none;
+
+                }
+                &:last-child {
+                    width: 395px;
+                    height: 285px;
+                    margin-top: -330px;
+                    left: -70px;
+                }
             }
             .promo-block-bottom-decor {
                 display: none;
