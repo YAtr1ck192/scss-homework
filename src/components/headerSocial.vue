@@ -73,8 +73,11 @@ export default {
                         height: 30px;
                     }
                     .social-link {
-                        @include defaultWhiteLink;
-                        margin-left: 12px;
+                        font-family: 'Roboto';
+                        font-weight: 500;
+                        color: white;
+                        text-decoration: none;
+                        line-height: 14px;                        margin-left: 12px;
                         font-size: 14px;
 
                     }

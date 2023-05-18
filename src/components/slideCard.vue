@@ -51,7 +51,9 @@ export default {
             .slide-desc {
                 text-align: center;
                 margin-bottom: 20px;
-                @include slide-desc
+                @include r300;
+                font-size: 18px;
+                line-height: 21px;
             }
             .hr {
                 width: 130px;
@@ -75,26 +77,16 @@ export default {
             width: 267px;
             max-height: 270px;
 
-            .slide-img {
-                width: 93px;
-                height: 106px;
-                z-index: 1;
-                margin-bottom: -43px;
-            }
             .slide-content {
                 width: 267px;
                 height: 210px;
                 padding: 70px 40px 30px;
 
                 .slide-desc {
-                    @include slide-desc;
                     margin-bottom: 10px;
                     font-size: 12px;
                     line-height: 14px;
                     text-align: center;
-                }
-                .hr {
-                    margin-bottom: 10px;
                 }
             }
         }

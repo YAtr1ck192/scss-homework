@@ -10,24 +10,12 @@ $phoneWidth: 770px;
     src: url("@/assets/fonts/Roboto-Regular.ttf");
 }
 
-@mixin defaultWhiteLink {
-    font-family: 'Roboto';
-    font-weight: 500;
-    color: white;
-    text-decoration: none;
-    line-height: 14px;
-}
 @mixin defaultGreyText {
     font-family: 'Roboto';
     font-weight: 300;
     line-height: 21px;
     color: #737373;
     text-decoration: none;
-}
-@mixin defaultBlackDesc {
-    font-family: 'Roboto';
-    font-size: 24px;
-    font-weight: 300;
 }
 @mixin linearGradientButton {
     font-family: 'Roboto';
@@ -39,14 +27,12 @@ $phoneWidth: 770px;
     background: $linearGradient;
     border: none;
     border-radius: 7px;
-    padding: 15px 40px;
 }
-@mixin slide-desc {
+@mixin r300 {
     font-family: 'Roboto';
-    font-size: 18px;
     font-weight: 300;
-    line-height: 21px;
-    text-align: center;
+    color: black;
+
 }
 @mixin blackBoldText {
     font-family: 'Roboto';

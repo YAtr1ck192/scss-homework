@@ -122,38 +122,20 @@ export default {
     }
     @media screen and (max-width: $tabletWidth){
         .desc-block-content {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
             padding: 100px 0 65px;
 
             .desc-block-title {
-                font-family: 'Roboto';
                 font-size: 40px;
-                font-weight: 400;
                 line-height: 47px;
-                letter-spacing: 0em;
-                text-align: center;
                 margin-bottom: 50px;
 
-                .gradient-text {
-                    background-image: $linearGradient;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
             }
             .desc-block-cards {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                width: 600px;
+                width: $maxWidthTablet - 30;
                 flex-wrap: wrap;
                 z-index: 4;
             }
             .desc-block-decor {
-                position: absolute;
-                z-index: -1;
                 width: 232px;
                 height: 200px;
             }
@@ -172,21 +154,14 @@ export default {
     }
     @media screen and (max-width: $phoneWidth){
           .desc-block-content {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              flex-direction: column;
               padding: 0 0 65px;
 
               .desc-block-title {
-                  font-family: 'Roboto';
                   font-size: 20px;
                   line-height: 24px;
               }
               .desc-block-cards {
                   width: 265px;
-                  flex-wrap: wrap;
-                  z-index: 4;
               }
               .desc-block-decor {
                   display: none;

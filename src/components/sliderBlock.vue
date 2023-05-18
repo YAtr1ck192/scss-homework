@@ -95,9 +95,8 @@ export default {
     }
     @media screen and (max-width: $phoneWidth){
         .slider {
-            padding: 40px 0 20px;
+
             .slider-on-media {
-                margin: 0 auto;
                 max-width: 270px;
 
                 .slide {

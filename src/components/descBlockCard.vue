@@ -38,11 +38,9 @@ export default {
             padding: 10px 33px 22px 22px;
 
             .card-title {
-                font-family: 'Roboto';
+                @include blackBoldText;
                 font-size: 36px;
-                font-weight: 700;
                 line-height: 42px;
-                text-align: left;
                 margin-bottom: 5px;
             }
             .card-desc {
@@ -63,16 +61,8 @@ export default {
                 background-size: cover;
             }
             .card-content {
-                padding: 10px 33px 22px 22px;
 
-                .card-title {
-                    font-size: 36px;
-                    line-height: 42px;
-                    margin-bottom: 5px;
-                }
                 .card-desc {
-                    @include defaultGreyText;
-                    font-size: 14px;
                     max-width: 500px;
                 }
             }
@@ -87,7 +77,6 @@ export default {
             .card-img {
                 width: $maxWidthPhone;
                 height: 180px;
-                background-size: cover;
             }
             .card-content {
                 padding: 20px;
@@ -95,12 +84,6 @@ export default {
                 .card-title {
                     font-size: 30px;
                     line-height: 35px;
-                }
-                .card-desc {
-                    @include defaultGreyText;
-                    font-size: 14px;
-                    max-width: 220px;
-                    line-height: 16px;
                 }
             }
           }

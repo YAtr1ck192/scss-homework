@@ -87,10 +87,8 @@ export default {
                         max-height: 33px;
                     }
                     .footer-link {
-                        font-family: 'Roboto';
-                        font-weight: 300;
+                        @include r300;
                         text-decoration: none;
-                        color: black;
                         font-size: 14px;
                         line-height: 15px;
                         max-width: 224px;
@@ -115,13 +113,11 @@ export default {
                     height: 97px;
                 }
                 .right-decor {
-                    right: 0;
                     top: 120px;
                     width: 40px;
                     height: 45px;
                 }
                 .footer-content {
-                    padding: 150px 0 20px 0;
                     display: flex;
                     justify-content: space-evenly;
                 }

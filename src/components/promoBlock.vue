@@ -59,7 +59,9 @@ export default {
                 text-align: left;
             }
             .promo-desc {
-                @include defaultBlackDesc;
+                font-family: 'Roboto';
+                font-size: 24px;
+                font-weight: 300;
                 line-height: 28px;
                 margin: 10px 0 20px;
                 display: flex;
@@ -68,6 +70,7 @@ export default {
             button {
                 @include linearGradientButton;
                 cursor: pointer;
+                padding: 15px 40px;
             }
         }
         .promo-main-img img {
@@ -107,7 +110,6 @@ export default {
             max-height: 407px;
             padding: 60px 0 120px;
 
-
             .left-part {
                 .promo-title {
                     max-width: 315px;
@@ -121,7 +123,6 @@ export default {
             }
             .promo-main-img img {
                 right: -50px;
-                position: absolute;
 
                 &:first-child {
                     width: 368px;
@@ -150,7 +151,8 @@ export default {
     }
     @media screen and (max-width: $phoneWidth) {
         .promo-content {
-            height: 240px;
+            height: 148px;
+            margin: 40px 0 55px;
             padding: 0;
 
             .left-part {
@@ -182,16 +184,14 @@ export default {
                 }
             }
             .promo-main-img img {
-                position: absolute;
 
                 &:first-child {
                     display: none;
-
                 }
                 &:last-child {
                     width: 395px;
-                    height: 285px;
-                    margin-top: -330px;
+                    height: 256px;
+                    margin-top: -365px;
                     left: -70px;
                 }
             }
