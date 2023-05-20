@@ -85,7 +85,7 @@ export default {
         padding: 25px 0 225px;
 
         .desc-block-title {
-            font-family: 'Roboto';
+            font-family: 'Roboto', sans-serif;
             font-size: 50px;
             font-weight: 400;
             line-height: 59px;

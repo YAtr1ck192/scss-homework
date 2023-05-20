@@ -52,14 +52,14 @@ export default {
         .left-part {
             .promo-title {
                 max-width: 675px;
-                font-family: 'Roboto';
+                font-family: 'Roboto', sans-serif;
                 font-size: 50px;
                 font-weight: 900;
                 line-height: 59px;
                 text-align: left;
             }
             .promo-desc {
-                font-family: 'Roboto';
+                font-family: 'Roboto', sans-serif;
                 font-size: 24px;
                 font-weight: 300;
                 line-height: 28px;

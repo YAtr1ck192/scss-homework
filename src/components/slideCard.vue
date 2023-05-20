@@ -63,7 +63,7 @@ export default {
                 margin-bottom: 10px;
             }
             .user-name {
-                font-family: 'Roboto';
+                font-family: 'Roboto', sans-serif;
                 font-size: 13px;
                 font-weight: 300;
                 line-height: 15px;
